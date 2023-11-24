@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Timer</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Arka plan rengi */
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 200px; /* Buton genişliği */
+  }
+  
+  .blue-button {
+    background-color: #3498db; /* Mavi renk */
+    color: white;
+  }
+  
+  .red-button {
+    background-color: #e74c3c; /* Kırmızı renk */
+    color: white;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="spans">
-                <div>
-                    <span>10</span>
-                    <p>Saat</p>
-                </div>
-                <div>
-                    <span>10</span>
-                    <p>dəqiqə</p>
-                </div>
-                <div>
-                    <span>10</span>
-                    <p>saniyə</p>
-                </div>
-            </div>
-            <div class="btns">
-                <button class="btn-start">Start</button>
-                <button class="btn-stop">Stop</button>
-            </div>
-        </div>
-    </div>
+  <button id="startButton" class="blue-button">Başlat</button>
+  <button id="resetButton" class="red-button">Sıfırla</button>
+  <p id="timer">25:00</p>
+
+
+  <script src="./js/index.js">
+   
+  </script>
 </body>
 </html>
